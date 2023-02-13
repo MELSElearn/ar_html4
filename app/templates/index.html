@@ -5,6 +5,7 @@
     <title>360&deg; Image Gallery</title>
     <meta name="description" content="360&deg; Image Gallery - A-Frame">
 <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
 <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
     <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
@@ -150,7 +151,7 @@
             <img id="correct" src="static/correct.png">
             <img id="wrong" src="static/wrong.png">
         </a-assets>
-    <a-entity id="default_angle" camera position="0 0 0" look-controls wasd-controls> 
+    <a-entity id="default_angle" camera look-controls> 
     <a-cursor fuse=true fuseTimeout="500" >
     <a-animation begin="mouseleave" easing="ease-in" attribute="scale"
         fill="forwards" from="1 1 1" to="1 1 1"></a-animation>
